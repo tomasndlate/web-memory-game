@@ -1,0 +1,939 @@
+/* Afonso Benedito 54937 */
+/* Afonso Teles da Silva 54945 */
+/* Tomás Ndlate 54970 */
+
+
+.GameBox{
+    position: absolute;
+    width:80%;
+    height: 600px;
+    left: 10%;
+    top: 200px;
+    text-align: center;
+    transition: 0.25s;
+    background:rgba(35,115,193,0.9);
+    border-radius: 50px;
+    border-color: black;
+    border-width: 1cm;
+    font-family: burbank, sans-serif;
+    color: white;
+    font-size: large;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+/* SCROLLBAR BOXS */
+
+.GameBox::-webkit-scrollbar{
+    width: 12px;
+    background-color: none;
+}
+
+.GameBox::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color:aliceblue; 
+    opacity: .7;
+}
+
+/*------------------------*/
+
+.TextGame p{
+    font-weight: bold;
+    opacity: 1;
+}
+
+.Select{
+    position:absolute;
+    width:90%;
+    height:300px;
+    top:150px;
+    left:5%;
+}
+
+/*------------------------*/
+
+.Bears img{
+    position: absolute;
+    width: 220px;
+    height: auto;
+    left: 30%;
+    top:0;
+}
+
+.Cards img{
+    position: absolute;
+    width: 120px;
+    height: auto;
+    left:55%;
+    top:50px;
+}
+
+/*------------------------*/
+
+
+.Select button{
+    width: 45px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 0 10px #363636;
+}
+
+.Select button:hover{
+    opacity:.8;
+}
+
+.PositionsButtons{
+    position:absolute;
+    width:80%;
+    height:50px;
+    top:270px;
+    left:10%;
+}
+
+/*------------------------*/
+
+
+
+.BtnCastanho{
+    background-image: linear-gradient(to bottom, #3d1901, #441f07, #4b250c, #522b10, #593113);
+}
+
+.BtnVerde{
+    background-image: linear-gradient(to bottom, #006705, #0d7405, #198104, #258e03, #309b00);
+}
+
+
+.BtnRosa{
+    background-image: linear-gradient(to bottom, #b70097, #c900ad, #d900c5, #e900de, #f800f8);
+}
+
+
+.BtnVermelho{
+    background-image: linear-gradient(to bottom, #ac0202, #bf0202, #d10102, #e50101, #f80000);
+}
+
+
+.BtnLaranja{
+    background-image: linear-gradient(to bottom, #da6b05, #e27902, #ea8600, #f19400, #f8a200);
+}
+
+
+.BtnAzul{
+    background-image: linear-gradient(to bottom, #00c2a0, #00cfab, #00ddb6, #00eac2, #00f8cd);
+}
+
+.BtnBranco{
+    background-image: linear-gradient(to bottom, #e7e7e7, #ededed, #f3f3f3, #f9f9f9, #ffffff);
+}
+
+/*-----------------------------*/
+
+.BtnPlayBox{
+    background-image: linear-gradient(to bottom, #f0d104, #eac702, #e5bd00, #deb300, #d8a900);
+    position:absolute;
+    width:30%;
+    height: 80px;
+    top:500px;
+    text-align: center;
+    font-family: burbank, sans-serif;
+    color:#604317;
+    border: 2px solid #D8A000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #363636;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.BtnPlayBox{
+    font-weight:bolder;
+}
+
+.BtnPlayBox.Left{
+    left:15%;
+}
+
+.BtnPlayBox.Right{
+    float:right;
+    right:15%;
+}
+
+/*------------ Mapa ------------*/
+
+#PreGame {
+    visibility: visible;
+}
+
+/* .IMG_Castanho {
+    visibility: hidden;
+} */
+
+.endGame {
+    visibility: hidden;
+    position: absolute;
+    width:50%;
+    height: 500px;
+    left: 5%;
+    top: 50px;
+    text-align: center;
+    transition: 0.25s;
+    background: linear-gradient(to bottom, #fc7b0d, #f36d08, #e95f04, #df5101, #d54200);
+    border-radius: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 2;
+    box-shadow: 0 0 10px #363636;
+    border: 5px solid rgb(116, 46, 6);
+
+}
+
+.endGame table{
+    border-collapse: collapse;
+    background: linear-gradient(to bottom, #fc7b0d, #f36d08, #e95f04, #df5101, #d54200);
+    color: white;
+    font-family: burbank, sans-serif;
+    width: 80%;
+    height: 350px;
+    position: absolute;
+    top: 120px;
+    left: 10%;
+    border: 5px solid rgb(116, 46, 6);
+    box-shadow: 0 0 10px #363636;
+}
+
+@media(max-width:1130px){
+    .endGame table{
+        left:1%;
+        width: 98%;
+    }
+}
+
+.endGame tr {
+    border: 3px solid;
+    border-color: rgb(116, 46, 6);
+}
+
+/*---------------- Multijogador ---------------*/
+
+.Multi_endGame{
+    visibility: hidden;
+    position: absolute;
+    width:50%;
+    height: 120px;
+    left: 5%;
+    top: 50px;
+    text-align: center;
+    transition: 0.25s;
+    background: linear-gradient(to bottom, #fc7b0d, #f36d08, #e95f04, #df5101, #d54200);
+    border-radius: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 2;
+    box-shadow: 0 0 10px #363636;
+    border: 5px solid rgb(116, 46, 6);
+    font-size: x-large;
+}
+
+.Multi_Result_Left{
+    position: absolute;
+    width: 50%;
+    left: 0px;
+    height: 100%;
+    top:0px;
+}
+
+.Multi_Result_Right{
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    height: 100%;
+    top:0px;
+}
+
+#Mapa {
+    position: absolute;
+    top:0px;
+    visibility: hidden;
+}
+
+#caixa{
+    margin: 0 auto; 
+    padding-top: 0px;
+    /*position: relative;*/
+    width: 1129px;
+}
+
+#SairMapa{
+    background-image: linear-gradient(to bottom, #f0d104, #eac702, #e5bd00, #deb300, #d8a900);
+    position:absolute;
+    width:90px;
+    height: 45px;
+    top:15px;
+    left: 15px;
+    text-align: center;
+    font-family: burbank, sans-serif;
+    font-size: 25px;
+    color:#604317;
+    border: 2px solid #D8A000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #363636;
+    cursor: pointer;
+    z-index: 1;
+}
+/*------------ Caixa Opçoes Jogo ------------*/
+
+#OptionsGame{
+    visibility: hidden;
+    position: absolute;
+    width:60%;
+    height: 400px;
+    left: 20%;
+    top: 100px;
+    text-align: center;
+    transition: 0.25s;
+    background: linear-gradient(to bottom, #fc7b0d, #f36d08, #e95f04, #df5101, #d54200);
+    border-radius: 50px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    box-shadow: 0px 0px 10px 10px rgba(15, 15, 15, 0.767);
+}
+
+#OptionsGame img{
+    width: 70%;
+    height: auto;
+    margin-top:4px;
+}
+
+.LenBaralho{
+    position:absolute;
+    width: 100%;
+    height: 50%;
+    top:0px;
+    left:0px;
+    display: list-item;
+    z-index: 2;
+}
+
+
+
+.PlayOrCancel{
+    position:absolute;
+    width: 50%;
+    height: 30%;
+    top:70%;
+    left:50%;
+}
+
+.PlayOrCancel button{
+    background-image: linear-gradient(to bottom, #f0d104, #eac702, #e5bd00, #deb300, #d8a900);
+    display: block;
+    width:50%;
+    height: 50px;
+    text-align: center;
+    font-family: burbank, sans-serif;
+    color:#604317;
+    border: 2px solid #D8A000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #363636;
+    cursor: pointer;
+    z-index: 2;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6px;
+    font-size: 20px;
+}
+
+.TimeGame{
+    position:absolute;
+    width: 50%;
+    height: 50%;
+    left:0px;
+    top:50%;
+}
+
+.LeftOptions{
+    position:absolute;
+    width: 25%;
+    height: 100%;
+    left: 5%;
+    top:0%;
+}
+
+.LeftOptions a,input{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:4px;
+}
+
+.MiddleOptions{
+    position:absolute;
+    width: 25%;
+    height: 100%;
+    left: 38.5%;
+    top:0%;
+}
+
+.MiddleOptions.Relogio{
+    width:40%;
+    left: 30%;
+    top:5%
+}
+
+.MiddleOptions a,input{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.RightOptions{
+    position:absolute;
+    width: 25%;
+    height: 100%;
+    float:right;
+    right:5%;
+    top:0%;
+}
+
+.RightOptions a,input{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*------------ Meme ------------*/
+
+#Meme{
+    visibility: hidden;
+    position:absolute;
+    width:150px;
+    height:70px;
+    top:5px;
+    margin-left:-150px;
+    z-index: 2;
+}
+
+#Meme img{
+    position: absolute;
+    left: 0px;
+    width:100%;
+    top:0px;
+    height: auto;
+}
+
+#mudaCor{
+    visibility: hidden;
+    background-color: rgb(204, 0, 255);
+    position:absolute;
+    width:100%;
+    height:88px;
+    top:0px;
+    margin-left:0px;
+    opacity: .4;
+}
+
+/*------------ Jogo ------------*/
+
+.Tabuleiros{
+    visibility: hidden;
+    position: absolute;
+    height: 600px;
+    width: auto;
+    top:0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.cartas {
+    position: absolute;
+    width: 678px;
+    left: 5%;
+    top: 30px;
+    z-index: 2;
+}
+
+.numeros {
+    visibility: hidden;
+    position: absolute;
+    width: 678px;
+    left: 5%;
+    top: 30px;
+    height: 1px;
+    z-index: 3;
+}
+
+.numeros a{
+    font-size: 25px;
+    width: 18%;
+    height: 1px;
+    background-image: black;
+    text-align: left;
+    font-family: burbank, sans-serif;
+    color:white;
+    display: inline-block;
+    margin-top: 110px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.handlers {
+    visibility: hidden;
+    width: 19.3%;
+    cursor: pointer;
+}
+
+.handlers:hover{
+    box-shadow: 0 0 10px #363636;
+}
+
+/*#pJogadas{
+    top: 0px;
+    text-align: center;
+    position: absolute;
+    visibility: hidden;
+}*/
+/************ SINGLEPLAYER ************/
+.miniMenu{
+    visibility: hidden;
+    position: absolute;
+    top:30px;
+    float: right;
+    right: 5%;
+    width: 30%;
+    height: 90%;
+    z-index:5;
+}
+
+.miniMenu img{
+    width:50%;
+    height: auto;
+}
+
+.miniMenu a{
+    font-size: 25px;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    background-image: linear-gradient(to bottom, #f0d104, #eac702, #e5bd00, #deb300, #d8a900);
+    text-align: center;
+    font-family: burbank, sans-serif;
+    color:white;
+    border: 2px solid #D8A000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #363636;
+    display: inline-block;
+    margin: 5px;
+}
+
+.miniMenu button{
+    font-size: 25px;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    background-image: linear-gradient(to right bottom, #f47f00, #f78c00, #fa9800, #fda500, #ffb100);
+    text-align: center;
+    font-family: burbank, sans-serif;
+    color:white;
+    border: 2px solid #e95f04;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #363636;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+}
+
+.miniMenu button.leave{
+    background-image: linear-gradient(to right bottom, #e76400, #eb6800, #ef6d00, #f27100, #f67600);
+    border:2px solid rgb(228, 53, 0);
+}
+
+.miniMenu input[type="text"]{
+    font-size: 15px;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    background-image: linear-gradient(to right bottom, #f47f00, #f78c00, #fa9800, #fda500, #ffb100);
+    text-align: center;
+    font-family: burbank, sans-serif;
+    color:white;
+    border: 2px solid #e95f04;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #363636;
+    display: inline-block;
+    margin: 5px;
+}
+/*********** MULTIPLAYER *************/
+
+.Multi_miniMenu{
+    visibility: hidden;
+    position: absolute;
+    top:30px;
+    float: right;
+    right: 5%;
+    width: 30%;
+    height: 90%;
+    z-index:5;
+}
+
+.Multi_miniMenu img{
+    width:50%;
+    height: auto;
+}
+
+.Multi_miniMenu a{
+    font-size: 25px;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    background-image: linear-gradient(to bottom, #f0d104, #eac702, #e5bd00, #deb300, #d8a900);
+    text-align: center;
+    font-family: burbank, sans-serif;
+    color:white;
+    border: 2px solid #D8A000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #363636;
+    display: inline-block;
+    margin: 5px;
+}
+
+.Multi_miniMenu button{
+    font-size: 25px;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    background-image: linear-gradient(to right bottom, #f47f00, #f78c00, #fa9800, #fda500, #ffb100);
+    text-align: center;
+    font-family: burbank, sans-serif;
+    color:white;
+    border: 2px solid #e95f04;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #363636;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px;
+}
+
+.Multi_miniMenu button.leave{
+    background-image: linear-gradient(to right bottom, #e76400, #eb6800, #ef6d00, #f27100, #f67600);
+    border:2px solid rgb(228, 53, 0);
+}
+
+.Multi_miniMenu input[type="text"]{
+    font-size: 15px;
+    width: 80%;
+    height: 30px;
+    left: 10%;
+    background-image: linear-gradient(to right bottom, #f47f00, #f78c00, #fa9800, #fda500, #ffb100);
+    text-align: center;
+    font-family: burbank, sans-serif;
+    color:white;
+    border: 2px solid #e95f04;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #363636;
+    display: inline-block;
+    margin: 5px;
+}
+
+/************************/
+
+@media(max-width:1450px){
+    .cartas{
+        width: 530px;
+        left:0;
+    }
+
+    .numeros{
+        width: 530px;
+        left:0;
+    }
+
+    .numeros a{
+        margin-top: 82px;
+    }
+}
+
+@media(max-width:1100px){
+    .BtnPlayBox{
+        font-size: 15px;
+        height: 60px;
+    }
+
+    .Bears img{
+        left:10%;
+    }
+
+    .Cards img{
+        left:70%;
+    }
+    .PositionsButtons{
+        top: 250px;
+    }
+}
+@media(max-width:900px){
+    .cartas{
+        top: 100px;
+        width: 400px;
+        left:0px;
+    }
+
+    .numeros{
+        top: 100px;
+        width: 400px;
+        left:3px;
+    }
+
+    .miniMenu{
+        height: 400px;
+        top:100px;
+    }
+
+    .numeros a{
+        width: 17.6%;
+        font-size: 18px;
+        margin-top: 62px;
+
+    }
+}
+
+@media(max-width: 700px){
+    .numeros a{
+        margin-left: 4px;
+        margin-right: 4px;
+        margin-top: 14%;
+    }
+}
+
+
+@media(max-width: 750px){
+
+    .GameBox{
+        left: 1%;
+        width: 98%;
+    }
+
+    .cartas{
+        top: 270px;
+        width: 90%;
+        left:5%;
+    }
+
+    .numeros{
+        top: 270px;
+        width: 90%;
+        left:5%;
+    }
+
+    .numeros a{
+        margin-top: 16.6%;
+    }
+
+
+    .miniMenu{
+        position: absolute;
+        top:5px;
+        left: 5%;
+        width: 90%;
+        height: 200px;
+        display: inline;
+    }
+
+    .miniMenu a{
+        width:35%;
+        display: inline-block;
+    }
+
+    .miniMenu button{
+        width:73%;
+        display: inline-block;
+    }
+
+    .miniMenu img{
+        position: absolute;
+        float:right;
+        right:5%;
+        width: 20%;
+        top:20px;
+    }
+
+    .miniMenu input[type="text"]{
+        width:72%;
+        display: inline-block;
+    }
+
+    .endGame {
+        width:90%;
+        height: 500px;
+        left: 5%;
+        top: 430px;
+    }
+
+    .Multi_endGame{
+        width:90%;
+        height: 120px;
+        left: 5%;
+        top: 430px;
+    }
+
+
+}
+
+@media(max-width:620px){
+    .numeros a{
+        margin-top: 15.8%;
+        width: 18.5%;
+    }
+}
+
+@media(max-width:700px){
+    .BtnPlayBox{
+        font-size: 13px;
+        height: 50px;
+    }
+    .Bears img{
+        left:7%;
+    }
+
+}
+
+@media(max-width:500px){
+    .BtnPlayBox{
+        font-size: 11px;
+        height: 40px;
+    }
+
+    .Bears img{
+        left:5%;
+    }
+}
+
+@media(max-width:400px){
+    .BtnPlayBox{
+        font-size: 9px;
+        top: 520px;
+    }
+
+    .Bears img{
+        left:-10%;
+    }
+
+    .Cards Img {
+        left: 60%;
+    }
+
+    .PositionsButtons{
+        top: 230px;
+    }
+}
+
+
+@media(max-width:750px){
+
+    /*--------------BACKGROUND---------------*/
+    
+    .BoxBackground.Three {
+        top: 1020px;  
+    }
+        
+    .BoxBackground.Four {
+        top:1100px;
+    }
+
+    /*------------------EXTRA LANGUAGES-------------------*/
+
+    .Language{
+        top:1023px;
+    }
+    
+    .Language:hover{
+        top:933px;
+        height: 160px;
+    }
+
+    /*----------------BOX AZUL-----------------*/
+
+    .GameBox{
+        height: 800px;
+    }
+
+}
+
+/*---------------------------------*/
+
+#FundoNaoLogado_Jogo{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    width: 100%;
+    top:175px;
+    height:645px;
+    left: 0px;
+    z-index: 10;
+}
+
+#NaoLogado_Jogo{
+    background: linear-gradient(to bottom, #fc7b0d, #f36d08, #e95f04, #df5101, #d54200);
+    height: 50%;
+    width: 40%;
+    max-width: 500px;
+    border: 3px solid rgb(116, 46, 6);
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px #363636;
+    text-align: center;
+    display: block;
+}
+
+#NaoLogado_Jogo img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+    max-width: 200px;
+    bottom:100px;
+    display: block;
+}
+
+#NaoLogado_Jogo p{
+    font-family: burbank, sans-serif;
+    display: block;
+    color:white;
+}
+
+#NaoLogado_Jogo a{
+    position: absolute;
+    width:50%;
+    left: 25%;
+    top:60%;
+}
+
+#NaoLogado_Jogo button{
+    position: absolute;
+    font-family: burbank,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.527);
+    border:none;
+    width: 40%;
+    height: 40px;
+    color:aliceblue;
+    border-radius: 24px;
+    cursor: pointer;
+    left: 30%;
+}
+
+#NaoLogado_Jogo button:hover{
+    background:#76C7FC;
+    cursor:pointer;
+}
+
+@media(max-width:750px){
+    #FundoNaoLogado_Jogo{
+        height:845px;
+    }
+}

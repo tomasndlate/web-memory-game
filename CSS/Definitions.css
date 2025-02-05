@@ -1,0 +1,200 @@
+/* Afonso Benedito 54937 */
+/* Afonso Teles da Silva 54945 */
+/* Tomás Ndlate 54937 */
+
+.Definitions{
+    position: absolute;
+    width:80%;
+    height: 550px;
+    left: 10%;
+    top: 250px;
+    text-align: center;
+    transition: 0.25s;
+    font-family: burbank, sans-serif;
+    color: white;
+    background:rgba(214, 68, 0, 0.8);
+    border-radius: 15px;
+    overflow-y: auto;
+}
+
+/*-----------------------------------------------*/
+
+/* SCROLLBAR BOXS */
+
+.Definitions::-webkit-scrollbar{
+    width: 12px;
+    background-color: none;
+}
+
+.Definitions::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color:aliceblue; 
+    opacity: .7;
+}
+
+
+/*-----------------------------------------------*/
+
+/*------------------------------*/
+
+.Right{
+    position: absolute;
+    height: 200px;
+    top: 70px;
+    width: 30%;
+    float: right;
+    right: 12%;
+}
+
+.Right input{
+    top:100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Left{
+    position: absolute;
+    height: 200px;
+    top: 70px;
+    width: 30%;
+    left: 12%;
+}
+
+.Left img{
+    /*position: absolute;*/
+    width: 30%;
+    height: auto;
+    left: 35%;
+    top:50px;
+    cursor: pointer;
+}
+
+.Definitions p{
+    font-weight: bold;
+    font-size: large;
+    opacity: 1;
+    background-color: steelblue;
+    border-radius: 7px;
+}
+
+#MobileCheckBox{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media(max-width:800px){
+    .Right{
+        width: 60%;
+        left: 20%;
+        top:70px;
+    }
+
+    .Left{
+        width: 60%;
+        left: 20%;
+        top:495px;
+    }
+}
+/*------------------------------*/
+
+.Definitions input[type="text"],.Definitions input[type="password"],.Definitions input[type="button"]{
+    
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid ;
+    border-color: white;
+    color: white;
+    width: 200px;
+    height: 30px;
+    border-radius: 24px;
+    transition: 0.25s;
+    outline: none;
+    background: none;
+}
+
+.Definitions input[type="button"]:hover{
+    cursor: pointer;
+    background-color: #1cf175c9;
+    border-color: #2ecc71;
+}
+
+.Definitions input[type="text"]:focus,.carac input[type="password"]:focus,.carac input[type="text"]:hover,.carac input[type="password"]:hover{
+    width: 220px;
+    border-color: #2ecc71;
+    text-align: center;
+    
+}
+
+/*------------------------------*/
+
+#FundoNaoLogado{
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.76);
+    position: absolute;
+    width: 100%;
+    top:175px;
+    height:645px;
+    left: 0px;
+    z-index: 10;
+}
+
+#NaoLogado{
+    background: linear-gradient(to bottom, #fc7b0d, #f36d08, #e95f04, #df5101, #d54200);
+    height: 50%;
+    width: 40%;
+    max-width: 500px;
+    border: 3px solid rgb(116, 46, 6);
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px #363636;
+    text-align: center;
+    display: block;
+}
+
+#NaoLogado img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: auto;
+    max-width: 200px;
+    bottom:100px;
+    display: block;
+}
+
+#NaoLogado p{
+    font-family: burbank, sans-serif;
+    display: block;
+    color:white;
+}
+
+#NaoLogado a{
+    position: absolute;
+    width:50%;
+    left: 25%;
+    top:60%;
+}
+
+#NaoLogado button{
+    position: absolute;
+    font-family: burbank,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.527);
+    border:none;
+    width: 40%;
+    height: 40px;
+    color:aliceblue;
+    border-radius: 24px;
+    cursor: pointer;
+    left: 30%;
+}
+
+#NaoLogado button:hover{
+    background:#76C7FC;
+    cursor:pointer;
+}

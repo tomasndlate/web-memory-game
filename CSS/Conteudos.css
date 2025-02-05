@@ -1,0 +1,100 @@
+/* Afonso Benedito 54937 */
+/* Afonso Teles da Silva 54945 */
+/* Tomás Ndlate 54937 */
+
+.Conteúdos{
+    position: absolute;
+    width:80%;
+    height: 590px;
+    left: 10%;
+    top: 200px;
+    transition: 0.25s;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgba(255, 255, 255, 0.72);
+    border-radius: 15px;
+    border: 3px solid #3281d0;
+    text-align: center;
+}
+
+.Conteúdos h5{
+    font-family: burbank, sans-serif;
+    color:#2373c1;
+    margin-left:5px;
+}
+/*-----------------------------------------------*/
+
+/* SCROLLBAR BOXS */
+
+.Conteúdos::-webkit-scrollbar{
+    width: 10px;
+    background-color: none;
+}
+
+.Conteúdos::-webkit-scrollbar-thumb{
+    border-radius: 8px;
+    background-color:aliceblue; 
+    opacity: .7;
+}
+
+
+/*-----------------------------------------------*/
+
+.Conteúdos h4{
+    font-family: burbank, sans-serif;
+    color:#2373c1;
+}
+
+#Ursos {
+    padding: .3em;
+    top: 0px;
+}
+
+#Ursos img {
+    width: 120px;
+    height: 110px;
+}
+
+#BackCartas {
+    padding: .3em;
+    top: 130px;
+}
+
+#BackCartas Img {
+    width: 120px;
+    height: 120px;
+}
+
+#Mapa {
+    top: 260px;
+    padding: .3em;
+}
+
+#Mapa img {
+    width: 300px;
+    height: 150px;
+}
+
+#Tabuleiros {
+    top: 420px;
+    padding: .3em;
+}
+
+#Tabuleiros img {
+    width: auto;
+    height: 120px;
+}
+
+#FrenteCartas {
+    top: 700px;
+    padding: .3em;
+}
+
+#FrenteCartas img{
+    width: 120px;
+    height: 120px;
+}
+
+#video video{
+    border-radius: 5px;
+}

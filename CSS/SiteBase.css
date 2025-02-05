@@ -1,0 +1,444 @@
+/* Afonso Benedito 54937 */
+/* Afonso Teles da Silva 54945 */
+/* Tomás Ndlate 54937 */
+
+/* Site Base CSS */
+
+/*BODY DETAILS*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+   
+    overflow-x: hidden;
+}
+
+::placeholder{ /*Chrome, Firefox*/
+    color:white;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+}
+   
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+}
+
+.BackgroundImage img{
+    position:absolute;
+    width: 100%;
+    height: auto;
+    max-height: 850px;
+    top: 178px;
+    z-index: -3;
+}
+/*-----------------------------------------------*/
+
+/* RECTANGLES ON TOP OF THE BACKGROUND */
+
+.BoxBackground{
+    width: 100%;
+    position: absolute;
+ }
+        
+ .BoxBackground.One {
+    background: rgba(35,115,193,1);
+    height: 107px;
+    top: 0px;   
+ } 
+        
+ .BoxBackground.Two {
+    background: linear-gradient(to bottom, #59abfc, #4d9ded, #408ede, #3281d0, #2373c1);
+    height: 90px;
+    top: 88px;  
+}
+        
+.BoxBackground.Three {
+    background: linear-gradient(to bottom, #fc7b0d, #f36d08, #e95f04, #df5101, #d54200);
+    height: 90px;
+    top: 820px;  
+}
+        
+.BoxBackground.Four {
+    background: linear-gradient(to bottom, #59abfc, #4d9ded, #408ede, #3281d0, #2373c1);
+    height: 150px;
+    top:900px;
+    overflow:hidden;
+}
+/* LANGUAGE BUTTON*/
+
+.Language{
+    position: absolute;
+    top:95px;
+    float: right;
+    right: 5%;
+    width: 74px;
+    height: 74px;
+    background: none;
+    border-radius: 50px;
+    z-index: 15;
+}
+
+.LangImage1{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top:0px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.LangImage1:hover{
+    cursor: pointer;
+    width: 72px;
+    left:-1px;
+    height: 72px;
+    top:-1px;
+}
+
+.LangImage2{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top:90px;
+    border-radius: 50px;
+    border: 2px solid white;
+    visibility: hidden;
+    transform: .1s;
+}
+
+.LangImage2:hover{
+    cursor: pointer;
+    width: 72px;
+    left:-1px;
+    height: 72px;
+    top:89px;
+}
+
+.Language:hover{
+    height: 160px;
+}
+
+.Language:hover img{
+    visibility: visible;
+}
+
+.LogOut{
+    position: absolute;
+    float: right;
+    right: 30px;
+    top:30px;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.LogOut:hover{
+    background-color: #ffffff59;
+}
+
+.LogOut a{
+    font-family: burbank,sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+.LogOut img{
+    width:22px;
+    height: 22px;
+}
+
+@media(max-width:1100px){
+    .Language{
+        top:823px;
+    }
+    
+    .Language:hover{
+        top:731px;
+        height: 160px;
+    }
+}
+
+ /* BUTTONS DETAILS */
+
+.Btns{
+    position: absolute;
+    top: 115px;
+    left: 15%;
+    transition: 0.25s;
+}
+
+.Btns button{
+    font-family: burbank,sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: none;
+    border:none;
+    width: 150px;
+    height: 40px;
+    color:aliceblue;
+    border-radius: 24px;
+}
+
+.Btns button:hover{
+    background:#76C7FC;
+    cursor:pointer;
+}
+
+.Btns button.using{
+    background:#76C7FC;
+}
+
+.Btns a:link{ 
+text-decoration:none;
+} 
+
+
+/* LOGO */
+
+
+.Logo{
+    position: absolute;
+    top: 90.5px;
+    left: 7%;
+    width: 85px;
+    height: 85px;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.Logo:hover{
+    width: 90px;
+    height: 90px;
+    top:88px;
+    left: 6.9%;
+}
+
+/*----------------------------------------------------------*/
+
+footer{
+    width:80%;
+    left:10%;
+    height: 150px;
+    position: absolute;
+    font-family: burbank,sans-serif;
+    color: white;
+    text-align: center;
+}
+
+footer p{
+    font-weight: 500;
+    font-size: 13px;
+}
+
+footer a{
+    font-weight: 500;
+    font-size: 13px;
+    color:white;
+    text-decoration:none; 
+}
+
+.Box{
+    height: 150px;
+    position: absolute;
+    
+}
+
+.Box.left{
+    width:30%;
+    left: 0;
+}
+
+.Box.center{
+    width:20%;
+    left: 40%;
+}
+
+.Box.right{
+    width:30%;
+    left: 70%;
+}
+
+.UnderLine:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.Line{
+    background:rgba(35,115,193,1);
+    box-shadow: 0 0 10px #363636;
+    width: 2px;
+    height: 100px;
+    top:25px;
+    border-radius: 5px;
+    position:absolute;
+}
+
+.Line.left{
+    left: 35%;
+}
+
+.Line.right{
+    float: right;
+    right: 35%;
+}
+
+.Ads{
+    background:grey;
+    /*background-image: ;*/
+    width: 50%;
+    height: 107px;
+    position: absolute;
+    left:25%;
+    
+    /* UNNECESSARY */
+    text-align: center;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+
+/*-----------------------------------------------*/
+/*-----------------@MEDIA 900PX------------------*/
+/*-----------------------------------------------*/
+
+@media(max-width:920px){
+
+    .Logo{
+        left:5%;
+    }   
+/*-- BUTTON DETAILS --*/
+
+    .Btns{
+        left: 15%;
+        width: 80%;
+    }
+
+    .Btns button{
+        font-size: 11px;
+        width: 19.4%;
+    }
+
+/*-- FOOTER DETAILS --*/
+
+    footer h4{
+        font-size: 15px; 
+        }
+
+    footer p{
+        font-size: 12px;
+    }
+
+
+
+}
+
+
+/*-----------------------------------------------*/
+/*-----------------@MEDIA 710PX------------------*/
+/*-----------------------------------------------*/
+
+
+@media(max-width:710px){
+    
+/*-- LOGO DETAILS --*/
+
+    .Logo{
+        top: 103px;
+        left: 2.8%;
+        width: 60px;
+        height: 60px;
+    }
+
+    .Logo:hover{
+        width: 65px;
+        height: 65px;
+        top:100.5px;
+        left: 2.6%;
+    }
+
+ /*-- BUTTONS DETAILS --*/
+
+    .Btns{
+        top: 93px;
+        width: 70%;
+        text-align: center;
+    }
+
+    .Btns button{
+        font-size: 11px;
+        width: 30%; 
+    }
+
+/*-- FOOTER DETAILS --*/
+
+    footer h4{
+        font-size: 13px; 
+        }
+
+    footer p{
+        font-size: 9px;
+    }
+}
+
+@media(max-width:500px){
+    footer h4{
+        font-size: 12px;
+    }
+
+    footer p{
+        font-size:7px;
+    }
+}
+
+/*------------------- TEMPORARY BUTTON --------------------*/
+
+.BTN_TEMP a{
+    background: linear-gradient(to bottom, #fc7b0d, #f36d08, #e95f04, #df5101, #d54200);
+    height: 50px;
+    width: 20%;
+    border: 3px solid rgb(116, 46, 6);
+    border-radius: 10px;
+    top: 15px;
+    position:absolute;
+    box-shadow: 0 0 10px #363636;
+    transition: .25s;
+    float:right;
+    right: 2%;
+    opacity: .7;
+    text-align: center;
+    font-family: burbank, sans-serif;
+    color: white;
+}
+
+.BTN_TEMP a:link{
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+.BTN_TEMP a:hover{
+    top:14px;
+    height:52px;
+    width:21%;
+    right:1.5%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.GameBTN a{
+    top:15px;
+    left: 4%;
+    width: 15%;
+}
+
+.GameBTN a:hover{
+    top: 14px;
+    left: 3%;
+    height: 52px;
+    width: 17%;
+}
