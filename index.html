@@ -12,18 +12,14 @@
       href="Imagens/BerrysFinais/Berry, The Bear Castanho.png"
       rel="shortcut icon"
     />
-    <title>Fórum</title>
+    <title>Jogar</title>
     <link href="Fontes/Fontes.css" rel="stylesheet" />
     <link href="CSS/SiteBase.css" rel="stylesheet" />
-    <link href="CSS/Forum.css" rel="stylesheet" />
+    <link href="CSS/Join.css" rel="stylesheet" />
     <script type="text/javascript" src="scripts/Login.js"></script>
   </head>
 
   <body>
-    <!------------------------------------------------------------------------->
-
-    <!-- ABRIR BACKGROUND (AREA DE TRABALHO) -->
-
     <!-- RETANGULOS QUE CONSTITUEM O BACKGROUND -->
 
     <!-- PRIMEIRO RETANGULO DO BACKGROUND-->
@@ -87,7 +83,9 @@
     <!-- BUTTONS TO OTHERS PAGES-->
 
     <div class="Btns">
-      <a href="index.html"><button id="Language_J">&#x1F601; Jogar</button></a>
+      <a href="index.html"
+        ><button id="Language_J" class="using">&#x1F601; Jogar</button></a
+      >
 
       <a href="RulesPT.html"
         ><button id="Language_Reg">&#x1F6AB; Regras</button></a
@@ -98,7 +96,7 @@
       >
 
       <a href="ForumPT.html"
-        ><button id="Language_F" class="using">&#x1F4E9; Fórum</button></a
+        ><button id="Language_F">&#x1F4E9; Fórum</button></a
       >
 
       <a href="DefinitionsPT.html"
@@ -111,9 +109,9 @@
       <a id="imgSair"><img src="Imagens/IconSair.png" /></a>
     </div>
 
-    <div class="BTN_TEMP GameBTN">
-      <a href="JogoPT.html"> <h3>Jogo</h3></a>
-    </div>
+    <!--<div class="BTN_TEMP GameBTN">
+                <a href="JogoPT.html"> <h3>Jogo</h3></a>
+            </div>-->
 
     <div class="Language">
       <img
@@ -141,98 +139,140 @@
       </audio>
 
       <img
-        src="Imagens/BerrysFinais/Berry, The Bear Base.png"
+        src="Imagens/BerrysFinais/Berry,%20The%20Bear%20Base.png"
         class="Logo"
         id="Language_LogoAlt"
         alt="Logotipo que dá som"
         onclick="document.getElementById('audio').play()"
       />
     </div>
-
     <!----------------------------------------------->
 
-    <!--Forum-->
-    <div class="ForumButtons">
-      <div
-        class="CommentsButton"
-        onclick="document.getElementsByClassName('CommentsBox')[0].style.visibility='visible'; document.getElementsByClassName('YourCommentBox')[0].style.visibility='hidden'; document.getElementsByClassName('CommentsButton')[0].style.border='4px solid rgb(116, 46, 6)'; document.getElementsByClassName('YourCommentButton')[0].style.border='none'; document.getElementsByClassName('SentComment')[0].style.visibility='hidden'; document.getElementsByClassName('WriteComment')[0].style.visibility='hidden';"
-      >
-        <h1 id="Language_CB">Comentários</h1>
-      </div>
-      <div
-        class="YourCommentButton"
-        onclick="document.getElementsByClassName('CommentsBox')[0].style.visibility='hidden'; document.getElementsByClassName('YourCommentBox')[0].style.visibility='visible'; document.getElementsByClassName('CommentsButton')[0].style.border='none'; document.getElementsByClassName('YourCommentButton')[0].style.border='4px solid rgb(116, 46, 6)'; document.getElementsByClassName('WriteComment')[0].style.visibility='visible'; document.getElementsByClassName('SentComment')[0].style.visibility='hidden';"
-      >
-        <h1 id="Language_EC">Escreve um Comentário</h1>
-      </div>
-    </div>
+    <!-- REGISTER, LOGIN, GUEST and RECOVER-->
 
-    <div class="ForumBox">
-      <div class="CommentsBox">
-        <h1 id="Language_VS">Os vossos comentários:</h1>
-        <table>
-          <tr>
-            <th class="Comment">Comentário</th>
-            <th class="Name">Nome de Utilizador</th>
-            <th class="Date">Data do Comentário</th>
-          </tr>
-          <tr>
-            <th class="Comment">Comentário</th>
-            <th class="Name">Nome de Utilizador</th>
-            <th class="Date">Data do Comentário</th>
-          </tr>
-          <tr>
-            <th class="Comment">Comentário</th>
-            <th class="Name">Nome de Utilizador</th>
-            <th class="Date">Data do Comentário</th>
-          </tr>
-          <tr>
-            <th class="Comment">Comentário</th>
-            <th class="Name">Nome de Utilizador</th>
-            <th class="Date">Data do Comentário</th>
-          </tr>
-          <tr>
-            <th class="Comment">Comentário</th>
-            <th class="Name">Nome de Utilizador</th>
-            <th class="Date">Data do Comentário</th>
-          </tr>
-          <tr>
-            <th class="Comment">Comentário</th>
-            <th class="Name">Nome de Utilizador</th>
-            <th class="Date">Data do Comentário</th>
-          </tr>
-        </table>
-      </div>
+    <!-------- REGISTER -------->
 
-      <div class="YourCommentBox">
-        <div class="WriteComment">
-          <div class="WriteCommentTitle">
-            <h1 id="Language_O">Dá nos a tua opinião!</h1>
-          </div>
-          <textarea
-            id="Language_EAATUO"
-            row="10"
-            cols="10"
-            placeholder="Escreve aqui a tua opinião!"
-          ></textarea>
-        </div>
+    <div class="line first"></div>
+    <div class="carac Register">
+      <div class="Opacity"></div>
+      <h1 id="Language_RG">Registar</h1>
+      <form onsubmit="Register()" action="">
         <input
-          class="SubmitComment"
-          id="Language_SC"
-          type="submit"
-          value="Enviar Comentário"
-          onclick="document.getElementsByClassName('WriteComment')[0].style.visibility='hidden'; document.getElementsByClassName('SentComment')[0].style.visibility='visible';"
+          type="text"
+          id="registerUserName"
+          placeholder="Nome de Utilizador"
         />
-        <div class="SentComment">
-          <h1 id="Language_CE">Comentário Enviado</h1>
-        </div>
-      </div>
+        <input type="email" id="registerEmail" placeholder="Email" />
+        <input
+          type="password"
+          id="registerPassword"
+          placeholder="Palavra Passe"
+        />
+        <input
+          type="password"
+          id="registerConfirmPassword"
+          placeholder="Confirmar Palavra Passe"
+        />
+        <h4>Data de Nascimento:</h4>
+        <input
+          type="date"
+          id="birthday"
+          name="birthday"
+          placeholder="DD/MM/AAAA"
+        />
+
+        <h4>Genero:</h4>
+        <input id="regGender" list="gender" placeholder="Escolher" />
+        <datalist id="gender">
+          <option value="Female"></option>
+          <option value="Male"></option>
+          <option value="Other"></option>
+        </datalist>
+
+        <input type="submit" id="registerSubmition" value="Registar" />
+      </form>
     </div>
-    <!-------------------------->
+
+    <!-------- LOGIN -------->
+
+    <div class="carac Login">
+      <div class="Opacity"></div>
+      <h1 id="Language_ENT">Entrar</h1>
+      <form onsubmit=" return Login()" action="JogoPT.html">
+        <input type="text" id="uname" placeholder="Nome de Utilizador" />
+        <input type="password" id="psw" placeholder="Palavra Passe" />
+        <input type="submit" id="loginSubmition" value="Sign in" />
+      </form>
+      <button
+        id="Language_RC"
+        onclick="document.getElementsByClassName('Recuperation')[0].style.visibility='visible';document.getElementsByClassName('Login')[0].style.visibility='hidden';"
+      >
+        Recuperar Conta
+      </button>
+    </div>
+    <!----------------------->
+
+    <!-------- GUEST -------->
+
+    <div class="line second"></div>
+    <div class="carac Guest">
+      <div class="Opacity"></div>
+      <h1 id="Language_CON">Convidado</h1>
+      <form onsubmit="Guest()" action="JogoPT.html">
+        <input type="text" id="guestName" placeholder="Nome de Jogador" />
+        <input type="submit" id="Language_JG" value="Jogar" />
+      </form>
+    </div>
+
+    <!----------------------->
+
+    <!---------RECOVER ACCOUNT------------>
+
+    <div class="carac Recuperation">
+      <div class="Opacity"></div>
+      <h1 id="Language_REC">
+        Recuperar <br />
+        Conta
+      </h1>
+      <h4 id="Language_OPS">Oops! Perdeste a CONTA!?</h4>
+      <form onsubmit="RecuperarConta()" action="#">
+        <input type="text" id="recUsername" placeholder="Nome de utilizador" />
+
+        <input type="text" id="recEmail" placeholder="Email" />
+
+        <input
+          type="password"
+          id="recPassword"
+          placeholder="Nova Palavra Passe"
+        />
+
+        <button id="Language_MP" type="submit">Mudar Palavra Passe</button>
+      </form>
+      <button
+        onclick="document.getElementsByClassName('Recuperation')[0].style.visibility='hidden';document.getElementsByClassName('Login')[0].style.visibility='visible';"
+      >
+        Login
+      </button>
+    </div>
+    <!----------- Already Logged ------------>
+
+    <div class="carac Jogar">
+      <div class="Opacity"></div>
+      <h1 id="Language_JL">Já estás Logado!</h1>
+      <img
+        src="Imagens/BerrysFinais/Berry,%20The%20Bear%20Base.png"
+        id="Language_BBALJ"
+        alt=""
+      />
+      <a href="JogoPT.html"><button id="Language_ALJ">Jogar</button></a>
+    </div>
+
+    <!----------------------------------------------->
     <script type="text/javascript" src="scripts/Languages.js"></script>
+    <script type="text/javascript" src="scripts/Join.js"></script>
     <script>
-      changeLanguage("forum");
-      sessionStorage.setItem("PAGE", "forum");
+      changeLanguage("join");
+      sessionStorage.setItem("PAGE", "join");
     </script>
   </body>
 </html>

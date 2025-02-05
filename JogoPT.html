@@ -1,434 +1,483 @@
 <!DOCTYPE html>
 
 <html>
+  <!-- Afonso Benedito 54937 -->
+  <!-- Afonso Teles da Silva 54945-->
+  <!-- Tomás Ndlate 54970 -->
 
-<!-- Afonso Benedito 54937 -->
-<!-- Afonso Teles da Silva 54945-->
-<!-- Tomás Ndlate 54970 -->
-
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="Imagens/BerrysFinais/Berry, The Bear Castanho.png" rel="shortcut icon"> 
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="Imagens/BerrysFinais/Berry, The Bear Castanho.png"
+      rel="shortcut icon"
+    />
     <title>Jogo</title>
-    <link href="Fontes/Fontes.css" rel="stylesheet">
-    <link href="CSS/SiteBase.css" rel="stylesheet">
-    <link href="CSS/Jogo.css" rel="stylesheet">
+    <link href="Fontes/Fontes.css" rel="stylesheet" />
+    <link href="CSS/SiteBase.css" rel="stylesheet" />
+    <link href="CSS/Jogo.css" rel="stylesheet" />
     <script type="text/javascript" src="scripts/Login.js"></script>
     <script type="text/javascript" src="scripts/JogoPT.js"></script>
-</head>
-    
-<body>
-    
+  </head>
+
+  <body>
     <!------------------------------------------------------------------------->
-        
+
     <!-- ABRIR BACKGROUND (AREA DE TRABALHO) -->
-    <div id="allBackground">   
-    
-        
-    <!-- RETANGULOS QUE CONSTITUEM O BACKGROUND -->
-    
-    <!-- PRIMEIRO RETANGULO DO BACKGROUND-->
-        
-        <div class="BoxBackground One">
-            <div class="Ads">
-                <h2 id="Language_AD">*ANÚNCIOS*</h2>
-            </div>
+    <div id="allBackground">
+      <!-- RETANGULOS QUE CONSTITUEM O BACKGROUND -->
+
+      <!-- PRIMEIRO RETANGULO DO BACKGROUND-->
+
+      <div class="BoxBackground One">
+        <div class="Ads">
+          <h2 id="Language_AD">*ANÚNCIOS*</h2>
         </div>
-    
-    <!-- SEGUNDO RETANGULO DO BACKGROUND-->
-        
-        <div class="BoxBackground Two"></div>
-        
-        <div class="BackgroundImage"><img src="Imagens/background2.png" id="Language_BackALT" alt="Montanhas ao fundo da imagem. Zona com árvores e arbustos cobertos por neve. Em cima de um monte de neve, dois ursos com camisolas branca e preta cada uma com o seu nome: Cherry e Berry, respetivamente. No centro deles encontra-se um boneco de neve com uma faixa a dizer Agente B. ."></div>
-    
-    <!-- TERCEIRO RETANGULO DO BACKGROUND-->
-    
-        <div class="BoxBackground Three"></div>
-            
-    <!-- QUARTO RETANGULO DO BACKGROUND-->
-        
-        <div class="BoxBackground Four">
-            <footer>
-                <div class="Box left">
-                    <h4 id="Language_QS">Quem Somos?</h4>
-                    <p id="Language_QS_Answer">Somos um grupo de 3 alunos de Tecnologias de Informação da Faculdade de Ciências (Afonso Teles, Afonso Benedito e Tomás Ndlate). Este site/jogo foi criado com o intuito de realizar um trabalho de ITW.</p>
-                </div>
-                    
-                <div class="Line left"></div>
-                    
-                <div class="Box center">
-                    <h4 id="Language_RS">Redes Sociais &#x1F92A;</h4>
-                    <p href="#" class="UnderLine">Facebook</p>
-                    <p href="#" class="UnderLine">Instagram</p>
-                    <p href="#" class="UnderLine">Twitter</p>
-                </div>
-                    
-                <div class="Line right"></div>
-                    
-                <div class="Box right">
-                    <h4 id="Language_S">Suporte</h4>
-                    <p href="#" id="Language_CA" class="UnderLine">Centro de Ajuda</p>
-                    <a href="Conteudos.html" class="UnderLine"> Conteúdos </a>
-                </div>
-            </footer>
-        </div>
-    
-    <!------------------------------------------------------------------------->
-        
-    <!-- BUTTONS TO OTHERS PAGES-->
-        
-        
-        <div class="Btns">
-            
-            <a href="JoinPT.html"><button  id="Language_J">&#x1F601; Jogar </button></a>
-                
-            <a href="RulesPT.html"><button  id="Language_Reg">&#x1F6AB; Regras </button></a>
-                
-            <a href="RankingPT.html"><button id="Language_Ran">&#x1F947; Rankings </button></a>
-                
-            <a href="ForumPT.html"><button id="Language_F">&#x1F4E9; Fórum </button></a>
-                
-            <a href="DefinitionsPT.html"><button id="Language_Def">&#x1F527; Definições </button></a>
-                
-        </div>
-    
-        <div class="LogOut">
-            <a id="aSair">Sair </a>
-            <a><img id="imgSair" src="Imagens/IconSair.png"></a>
-        </div>
-    
-        <div class="Language">
-            <img class="LangImage1" id="Lang1" src="Imagens/Icones Liguagens/portugal.png" alt="Bandeira de Portugal. Se escolhida ira trocar o idioma para Portugues">
-            <img class="LangImage2" id="Lang2" src="Imagens/Icones Liguagens/ingles.png" alt="British flag. If choosen, it will change the language to English">
-        </div>
-    
-        <div>
-            <audio id="audio">
-                <source src="sound.mp3" type="audio/mp3">
-                <source src="sound.ogg" type="audio/ogg">
-                <p id="Language_SoundError">O teu browser não suporta o áudio do HTML5. Em vez disso entra por <a href="sound.mp3"> este link para o áudio</a></p>
-            </audio>
-            
-            <img src='Imagens/BerrysFinais/Berry, The Bear Base.png' class="Logo" id="Language_LogoAlt" alt="Logotipo que dá som" onclick="document.getElementById('audio').play()">
-        </div>
-        
+      </div>
+
+      <!-- SEGUNDO RETANGULO DO BACKGROUND-->
+
+      <div class="BoxBackground Two"></div>
+
+      <div class="BackgroundImage">
+        <img
+          src="Imagens/background2.png"
+          id="Language_BackALT"
+          alt="Montanhas ao fundo da imagem. Zona com árvores e arbustos cobertos por neve. Em cima de um monte de neve, dois ursos com camisolas branca e preta cada uma com o seu nome: Cherry e Berry, respetivamente. No centro deles encontra-se um boneco de neve com uma faixa a dizer Agente B. ."
+        />
+      </div>
+
+      <!-- TERCEIRO RETANGULO DO BACKGROUND-->
+
+      <div class="BoxBackground Three"></div>
+
+      <!-- QUARTO RETANGULO DO BACKGROUND-->
+
+      <div class="BoxBackground Four">
+        <footer>
+          <div class="Box left">
+            <h4 id="Language_QS">Quem Somos?</h4>
+            <p id="Language_QS_Answer">
+              Somos um grupo de 3 alunos de Tecnologias de Informação da
+              Faculdade de Ciências (Afonso Teles, Afonso Benedito e Tomás
+              Ndlate). Este site/jogo foi criado com o intuito de realizar um
+              trabalho de ITW.
+            </p>
+          </div>
+
+          <div class="Line left"></div>
+
+          <div class="Box center">
+            <h4 id="Language_RS">Redes Sociais &#x1F92A;</h4>
+            <p href="#" class="UnderLine">Facebook</p>
+            <p href="#" class="UnderLine">Instagram</p>
+            <p href="#" class="UnderLine">Twitter</p>
+          </div>
+
+          <div class="Line right"></div>
+
+          <div class="Box right">
+            <h4 id="Language_S">Suporte</h4>
+            <p href="#" id="Language_CA" class="UnderLine">Centro de Ajuda</p>
+            <a href="Conteudos.html" class="UnderLine"> Conteúdos </a>
+          </div>
+        </footer>
+      </div>
+
+      <!------------------------------------------------------------------------->
+
+      <!-- BUTTONS TO OTHERS PAGES-->
+
+      <div class="Btns">
+        <a href="index.html"
+          ><button id="Language_J">&#x1F601; Jogar</button></a
+        >
+
+        <a href="RulesPT.html"
+          ><button id="Language_Reg">&#x1F6AB; Regras</button></a
+        >
+
+        <a href="RankingPT.html"
+          ><button id="Language_Ran">&#x1F947; Rankings</button></a
+        >
+
+        <a href="ForumPT.html"
+          ><button id="Language_F">&#x1F4E9; Fórum</button></a
+        >
+
+        <a href="DefinitionsPT.html"
+          ><button id="Language_Def">&#x1F527; Definições</button></a
+        >
+      </div>
+
+      <div class="LogOut">
+        <a id="aSair">Sair </a>
+        <a><img id="imgSair" src="Imagens/IconSair.png" /></a>
+      </div>
+
+      <div class="Language">
+        <img
+          class="LangImage1"
+          id="Lang1"
+          src="Imagens/Icones Liguagens/portugal.png"
+          alt="Bandeira de Portugal. Se escolhida ira trocar o idioma para Portugues"
+        />
+        <img
+          class="LangImage2"
+          id="Lang2"
+          src="Imagens/Icones Liguagens/ingles.png"
+          alt="British flag. If choosen, it will change the language to English"
+        />
+      </div>
+
+      <div>
+        <audio id="audio">
+          <source src="sound.mp3" type="audio/mp3" />
+          <source src="sound.ogg" type="audio/ogg" />
+          <p id="Language_SoundError">
+            O teu browser não suporta o áudio do HTML5. Em vez disso entra por
+            <a href="sound.mp3"> este link para o áudio</a>
+          </p>
+        </audio>
+
+        <img
+          src="Imagens/BerrysFinais/Berry, The Bear Base.png"
+          class="Logo"
+          id="Language_LogoAlt"
+          alt="Logotipo que dá som"
+          onclick="document.getElementById('audio').play()"
+        />
+      </div>
     </div>
     <!----------------------------------------------->
 
     <!-- NAO LOGADO-->
 
     <div id="FundoNaoLogado_Jogo">
-        <div id="NaoLogado_Jogo">
-            <img src='Imagens/BerrysFinais/Berry, The Bear Base.png'>
-            <p id="Language_NELJOGO">Não estás Logado!</p>
-            <a href="JoinPT.html"><button id="Language_JCE">&#x1F601; Jogar </button></a>
-        </div>
+      <div id="NaoLogado_Jogo">
+        <img src="Imagens/BerrysFinais/Berry, The Bear Base.png" />
+        <p id="Language_NELJOGO">Não estás Logado!</p>
+        <a href="index.html"
+          ><button id="Language_JCE">&#x1F601; Jogar</button></a
+        >
+      </div>
     </div>
 
     <!-- Game Spot -->
-            <div id="Meme">
-                <img src=" Imagens/Meme.png">
-            </div>
-            <audio id="audioMeme">
-                <source src="Meme.mp3" type="audio/mp3">
-            </audio>
-            <div id="mudaCor"></div>
+    <div id="Meme">
+      <img src=" Imagens/Meme.png" />
+    </div>
+    <audio id="audioMeme">
+      <source src="Meme.mp3" type="audio/mp3" />
+    </audio>
+    <div id="mudaCor"></div>
 
-        <div class="GameBox">
-            <div id="PreGame">
-                        <h2 id="Language_VAMOSJOGAR">Vamos Jogar</h2>
-                        <h4 id="Language_TELEMOVEL">(Se estiveres no telemovél muda nas Definições)</h4>
-                        <h4 id="Language_CHOOSEYOURCHAR">CHOOSE YOUR CHARACTER</h4>
-                        
-                        <div class="Select">
-                            <div class="PositionsButtons">
+    <div class="GameBox">
+      <div id="PreGame">
+        <h2 id="Language_VAMOSJOGAR">Vamos Jogar</h2>
+        <h4 id="Language_TELEMOVEL">
+          (Se estiveres no telemovél muda nas Definições)
+        </h4>
+        <h4 id="Language_CHOOSEYOURCHAR">CHOOSE YOUR CHARACTER</h4>
 
-                            <button id="BtnCastanho" class="BtnCastanho BtnCores"></button>
-                            
-                            <button id="BtnVerde" class="BtnVerde BtnCores"></button>
-                                
-                            <button id="BtnRosa" class="BtnRosa BtnCores"></button>
-                            
-                            <button id="BtnVermelho" class="BtnVermelho BtnCores"></button>
-                            
-                            <button id="BtnLaranja" class="BtnLaranja BtnCores"></button>
-                            
-                            <button id="BtnAzul" class="BtnAzul BtnCores"></button>
-                            
-                            <button id="BtnBranco" class="BtnBranco BtnCores"></button>
-                            
-                            </div>
-                            
-                            <div class="Bears">
-                                <img id="CorBerry" class="PreGame_IMG IMG_Castanho" src="Imagens/BerrysFinais/Berry,%20The%20Bear%20Castanho.png" alt="Urso Castanho, sorridente. Tem uma camisola preta, com um diamante ao canto e com o seu nome inscrito, 'Berry'.">
+        <div class="Select">
+          <div class="PositionsButtons">
+            <button id="BtnCastanho" class="BtnCastanho BtnCores"></button>
 
-                            </div>
-                            
-                            <div class="Cards">
-                                <img id="CartaCorBerry" class="PreGame_IMG IMG_Castanho" src="Imagens/FundoDasCartas/Carta%20Castanha.png" alt="Quadrado castanho, que simboliza um item do jogo da memória por virar. No centro encontra-se a silhueta de um urso.">
-                            </div>
-                        </div>
-                <div class="BtnPlayBox Left"><h1>SinglePlayer</h1></div>
-                <div class="BtnPlayBox Right"><h1>Multiplayer</h1></div>
-            </div>    
-            
-            <div id="Mapa" >
-                <div id="caixa">
-                    <canvas width="1129" height="636" style="border: solid 1px;"></canvas>
-                    <button id="SairMapa">Sair</button>
-                </div>
-                <script type="text/javascript" src="scripts/personagem.js"></script>
-                <script type="text/javascript" src="scripts/sprites.js"></script>
-                <script type="text/javascript" src="scripts/collide.js"></script>
-                <script type="text/javascript" src="scripts/script.js"></script>
-            </div>
+            <button id="BtnVerde" class="BtnVerde BtnCores"></button>
 
-            <div id="OptionsGame">
+            <button id="BtnRosa" class="BtnRosa BtnCores"></button>
 
-                <div class="LenBaralho">
+            <button id="BtnVermelho" class="BtnVermelho BtnCores"></button>
 
-                    <div class="LeftOptions">
-                        <img src="Imagens/20CartasPares.png">
-                        <a>20 Cartas/Pares</a>
-                        <input type="radio" name="LenBaralho" id="Cartas20Pares" CHECKED/>
-                    </div>
+            <button id="BtnLaranja" class="BtnLaranja BtnCores"></button>
 
-                    <div class="MiddleOptions">
-                        <img src="Imagens/30CartasPares.png">
-                        <a>30 Cartas/Pares</a>
-                        <input type="radio" name="LenBaralho" id="Cartas30Pares"/>
-                    </div>
+            <button id="BtnAzul" class="BtnAzul BtnCores"></button>
 
-                    <div class="RightOptions">
-                        <img src="Imagens/15CartasTrios.png">
-                        <a>15 Cartas/Trios</a>
-                        <input type="radio" name="LenBaralho" id="Cartas15Trios"/>
-                    </div>
+            <button id="BtnBranco" class="BtnBranco BtnCores"></button>
+          </div>
 
-                </div>
+          <div class="Bears">
+            <img
+              id="CorBerry"
+              class="PreGame_IMG IMG_Castanho"
+              src="Imagens/BerrysFinais/Berry,%20The%20Bear%20Castanho.png"
+              alt="Urso Castanho, sorridente. Tem uma camisola preta, com um diamante ao canto e com o seu nome inscrito, 'Berry'."
+            />
+          </div>
 
-                <div class="TimeGame">
-
-                    <div class="MiddleOptions Relogio">
-                        <img src="Imagens/ContraRelogio.png">
-                        <a>Contra-Relógio</a>
-                        <input type="checkbox" name="TimeGame" id="ContraRelogioChecker"/>
-                    </div>
-
-                </div>
-
-                
-                <div class="PlayOrCancel">
-                    <button id="OptJogar">Jogar</button>
-                    <button id="OptVoltar">Voltar</button>
-                </div>
-
-            </div>
-
-            <audio id="audioClick">
-                <source src="Click.mp3" type="audio/mp3">
-            </audio>
-            
-            <audio id="audioAcertar">
-                <source src="Acertar.mp3" type="audio/mp3">
-            </audio>
-
-            <div id="Jogo">
-
-                <div class="cartas">
-                    <img id="c1" class="handlers">
-                    <img id="c2" class="handlers">
-                    <img id="c3" class="handlers">
-                    <img id="c4" class="handlers">
-                    <img id="c5" class="handlers">
-                    <img id="c6" class="handlers">
-                    <img id="c7" class="handlers">
-                    <img id="c8" class="handlers">
-                    <img id="c9" class="handlers">
-                    <img id="c10" class="handlers">
-                    <img id="c11" class="handlers">
-                    <img id="c12" class="handlers">
-                    <img id="c13" class="handlers">
-                    <img id="c14" class="handlers">
-                    <img id="c15" class="handlers">
-                    <img id="c16" class="handlers">
-                    <img id="c17" class="handlers">
-                    <img id="c18" class="handlers">
-                    <img id="c19" class="handlers">
-                    <img id="c20" class="handlers">
-                    <img id="c21" class="handlers">
-                    <img id="c22" class="handlers">
-                    <img id="c23" class="handlers">
-                    <img id="c24" class="handlers">
-                    <img id="c25" class="handlers">
-                    <img id="c26" class="handlers">
-                    <img id="c27" class="handlers">
-                    <img id="c28" class="handlers">
-                    <img id="c29" class="handlers">
-                    <img id="c30" class="handlers">
-
-                </div>
-                <div class="numeros">
-                    <a id="n1">1</a>
-                    <a id="n2">2</a>
-                    <a id="n3">3</a>
-                    <a id="n4">4</a>
-                    <a id="n5">5</a>
-                    <a id="n6">6</a>
-                    <a id="n7">7</a>
-                    <a id="n8">8</a>
-                    <a id="n9">9</a>
-                    <a id="n10">10</a>
-                    <a id="n11">11</a>
-                    <a id="n12">12</a>
-                    <a id="n13">13</a>
-                    <a id="n14">14</a>
-                    <a id="n15">15</a>
-                    <a id="n16">16</a>
-                    <a id="n17">17</a>
-                    <a id="n18">18</a>
-                    <a id="n19">19</a>
-                    <a id="n20">20</a>
-                    <a id="n21">21</a>
-                    <a id="n22">22</a>
-                    <a id="n23">23</a>
-                    <a id="n24">24</a>
-                    <a id="n25">25</a>
-                    <a id="n26">26</a>
-                    <a id="n27">27</a>
-                    <a id="n28">28</a>
-                    <a id="n29">29</a>
-                    <a id="n30">30</a>
-                </div>
-                <img class="Tabuleiros" id="imgTabuleiro" src="Imagens/Tabuleiro/Tabuleiro1.png">
-                <div class="miniMenu">
-                    <img id="MM_IMG">
-                    <a id="NamePlayer">Nome</a>
-                    <input type="text" id="nCard" placeholder="Introduzir Nº Carta" onkeypress="nCardSubmit(event)">
-                    <button type="button" id="BtnSubmeter">Submeter</button>
-                    <a id="aTempo"></a>
-                    <a id="aJogadas"></a>
-                    <button id="BtnRecomeçar">Recomeçar</button>
-                    <button id="BtnSair"class="leave">Sair</button>
-                </div>
-
-                <div class="Multi_miniMenu">
-                    <a id="Multi_NamePlayer">Nome</a>
-                    <a id="Multi_NamePlayer_Guest">Oponente</a>
-                    <input type="text" id="Multi_nCard" placeholder="Introduzir Nº Carta" onkeypress="nCardSubmit(event)">
-                    <button type="button" id="Multi_BtnSubmeter">Submeter</button>
-                    <a id="Multi_Player_Pairs">Nome: X Pares</a>
-                    <a id="Multi_Guest_Pairs">Oponente: X Pares</a>
-                    <a id="Multi_totalJogadas">Total Jogadas</a>
-                    <button id="Multi_BtnRecomeçar">Recomeçar</button>
-                    <button id="Multi_BtnSair"class="leave">Sair</button>
-                </div>
-
-                <div class="endGame">
-                    <p id="endPerdeste"></p>
-                    <p id="endJogadas"></p>
-                    <p id="endTempo"></p>
-                    <table>
-                        <tr>
-                            <th id="">Posição</th>
-                            <th id="">Jogadas</th>
-                            <th id="">Tempo</th>
-                            <th id="">Quantidade</th>
-                            <th id="">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <th id="Plays1">Jogadas</th>
-                            <th id="Time1">Tempo</th>
-                            <th id="Quantidade1">Quantidade</th>
-                            <th id="Modo1">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>2</th>
-                            <th id="Plays2">Jogadas</th>
-                            <th id="Time2">Tempo</th>
-                            <th id="Quantidade2">Quantidade</th>
-                            <th id="Modo2">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>3</th>
-                            <th id="Plays3">Jogadas</th>
-                            <th id="Time3">Tempo</th>
-                            <th id="Quantidade3">Quantidade</th>
-                            <th id="Modo3">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>4</th>
-                            <th id="Plays4">Jogadas</th>
-                            <th id="Time4">Tempo</th>
-                            <th id="Quantidade4">Quantidade</th>
-                            <th id="Modo4">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>5</th>
-                            <th id="Plays5">Jogadas</th>
-                            <th id="Time5">Tempo</th>
-                            <th id="Quantidade5">Quantidade</th>
-                            <th id="Modo5">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>6</th>
-                            <th id="Plays6">Jogadas</th>
-                            <th id="Time6">Tempo</th>
-                            <th id="Quantidade6">Quantidade</th>
-                            <th id="Modo6">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>7</th>
-                            <th id="Plays7">Jogadas</th>
-                            <th id="Time7">Tempo</th>
-                            <th id="Quantidade7">Quantidade</th>
-                            <th id="Modo7">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>8</th>
-                            <th id="Plays8">Jogadas</th>
-                            <th id="Time8">Tempo</th>
-                            <th id="Quantidade8">Quantidade</th>
-                            <th id="Modo8">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>9</th>
-                            <th id="Plays9">Jogadas</th>
-                            <th id="Time9">Tempo</th>
-                            <th id="Quantidade9">Quantidade</th>
-                            <th id="Modo9">Modo</th>
-                        </tr>
-                        <tr>
-                            <th>10</th>
-                            <th id="Plays10">Jogadas</th>
-                            <th id="Time10">Tempo</th>
-                            <th id="Quantidade10">Quantidade</th>
-                            <th id="Modo10">Modo</th>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="Multi_endGame">
-                    <div class="Multi_Result_Left">
-                        <p id="MultiEnd_PlayerName">Nome Jogador</p>
-                        <p id="MultiEnd_PlayerPairs">Pares: X</p>
-                    </div>
-                    <div class="Multi_Result_Right">
-                        <p id="MultiEnd_GuestName">Oponente</p>
-                        <p id="MultiEnd_GuestPairs">Pares: X</p>
-                    </div>
-                </div>
+          <div class="Cards">
+            <img
+              id="CartaCorBerry"
+              class="PreGame_IMG IMG_Castanho"
+              src="Imagens/FundoDasCartas/Carta%20Castanha.png"
+              alt="Quadrado castanho, que simboliza um item do jogo da memória por virar. No centro encontra-se a silhueta de um urso."
+            />
+          </div>
         </div>
+        <div class="BtnPlayBox Left"><h1>SinglePlayer</h1></div>
+        <div class="BtnPlayBox Right"><h1>Multiplayer</h1></div>
+      </div>
+
+      <div id="Mapa">
+        <div id="caixa">
+          <canvas width="1129" height="636" style="border: solid 1px"></canvas>
+          <button id="SairMapa">Sair</button>
+        </div>
+        <script type="text/javascript" src="scripts/personagem.js"></script>
+        <script type="text/javascript" src="scripts/sprites.js"></script>
+        <script type="text/javascript" src="scripts/collide.js"></script>
+        <script type="text/javascript" src="scripts/script.js"></script>
+      </div>
+
+      <div id="OptionsGame">
+        <div class="LenBaralho">
+          <div class="LeftOptions">
+            <img src="Imagens/20CartasPares.png" />
+            <a>20 Cartas/Pares</a>
+            <input type="radio" name="LenBaralho" id="Cartas20Pares" checked />
+          </div>
+
+          <div class="MiddleOptions">
+            <img src="Imagens/30CartasPares.png" />
+            <a>30 Cartas/Pares</a>
+            <input type="radio" name="LenBaralho" id="Cartas30Pares" />
+          </div>
+
+          <div class="RightOptions">
+            <img src="Imagens/15CartasTrios.png" />
+            <a>15 Cartas/Trios</a>
+            <input type="radio" name="LenBaralho" id="Cartas15Trios" />
+          </div>
+        </div>
+
+        <div class="TimeGame">
+          <div class="MiddleOptions Relogio">
+            <img src="Imagens/ContraRelogio.png" />
+            <a>Contra-Relógio</a>
+            <input type="checkbox" name="TimeGame" id="ContraRelogioChecker" />
+          </div>
+        </div>
+
+        <div class="PlayOrCancel">
+          <button id="OptJogar">Jogar</button>
+          <button id="OptVoltar">Voltar</button>
+        </div>
+      </div>
+
+      <audio id="audioClick">
+        <source src="Click.mp3" type="audio/mp3" />
+      </audio>
+
+      <audio id="audioAcertar">
+        <source src="Acertar.mp3" type="audio/mp3" />
+      </audio>
+
+      <div id="Jogo">
+        <div class="cartas">
+          <img id="c1" class="handlers" />
+          <img id="c2" class="handlers" />
+          <img id="c3" class="handlers" />
+          <img id="c4" class="handlers" />
+          <img id="c5" class="handlers" />
+          <img id="c6" class="handlers" />
+          <img id="c7" class="handlers" />
+          <img id="c8" class="handlers" />
+          <img id="c9" class="handlers" />
+          <img id="c10" class="handlers" />
+          <img id="c11" class="handlers" />
+          <img id="c12" class="handlers" />
+          <img id="c13" class="handlers" />
+          <img id="c14" class="handlers" />
+          <img id="c15" class="handlers" />
+          <img id="c16" class="handlers" />
+          <img id="c17" class="handlers" />
+          <img id="c18" class="handlers" />
+          <img id="c19" class="handlers" />
+          <img id="c20" class="handlers" />
+          <img id="c21" class="handlers" />
+          <img id="c22" class="handlers" />
+          <img id="c23" class="handlers" />
+          <img id="c24" class="handlers" />
+          <img id="c25" class="handlers" />
+          <img id="c26" class="handlers" />
+          <img id="c27" class="handlers" />
+          <img id="c28" class="handlers" />
+          <img id="c29" class="handlers" />
+          <img id="c30" class="handlers" />
+        </div>
+        <div class="numeros">
+          <a id="n1">1</a>
+          <a id="n2">2</a>
+          <a id="n3">3</a>
+          <a id="n4">4</a>
+          <a id="n5">5</a>
+          <a id="n6">6</a>
+          <a id="n7">7</a>
+          <a id="n8">8</a>
+          <a id="n9">9</a>
+          <a id="n10">10</a>
+          <a id="n11">11</a>
+          <a id="n12">12</a>
+          <a id="n13">13</a>
+          <a id="n14">14</a>
+          <a id="n15">15</a>
+          <a id="n16">16</a>
+          <a id="n17">17</a>
+          <a id="n18">18</a>
+          <a id="n19">19</a>
+          <a id="n20">20</a>
+          <a id="n21">21</a>
+          <a id="n22">22</a>
+          <a id="n23">23</a>
+          <a id="n24">24</a>
+          <a id="n25">25</a>
+          <a id="n26">26</a>
+          <a id="n27">27</a>
+          <a id="n28">28</a>
+          <a id="n29">29</a>
+          <a id="n30">30</a>
+        </div>
+        <img
+          class="Tabuleiros"
+          id="imgTabuleiro"
+          src="Imagens/Tabuleiro/Tabuleiro1.png"
+        />
+        <div class="miniMenu">
+          <img id="MM_IMG" />
+          <a id="NamePlayer">Nome</a>
+          <input
+            type="text"
+            id="nCard"
+            placeholder="Introduzir Nº Carta"
+            onkeypress="nCardSubmit(event)"
+          />
+          <button type="button" id="BtnSubmeter">Submeter</button>
+          <a id="aTempo"></a>
+          <a id="aJogadas"></a>
+          <button id="BtnRecomeçar">Recomeçar</button>
+          <button id="BtnSair" class="leave">Sair</button>
+        </div>
+
+        <div class="Multi_miniMenu">
+          <a id="Multi_NamePlayer">Nome</a>
+          <a id="Multi_NamePlayer_Guest">Oponente</a>
+          <input
+            type="text"
+            id="Multi_nCard"
+            placeholder="Introduzir Nº Carta"
+            onkeypress="nCardSubmit(event)"
+          />
+          <button type="button" id="Multi_BtnSubmeter">Submeter</button>
+          <a id="Multi_Player_Pairs">Nome: X Pares</a>
+          <a id="Multi_Guest_Pairs">Oponente: X Pares</a>
+          <a id="Multi_totalJogadas">Total Jogadas</a>
+          <button id="Multi_BtnRecomeçar">Recomeçar</button>
+          <button id="Multi_BtnSair" class="leave">Sair</button>
+        </div>
+
+        <div class="endGame">
+          <p id="endPerdeste"></p>
+          <p id="endJogadas"></p>
+          <p id="endTempo"></p>
+          <table>
+            <tr>
+              <th id="">Posição</th>
+              <th id="">Jogadas</th>
+              <th id="">Tempo</th>
+              <th id="">Quantidade</th>
+              <th id="">Modo</th>
+            </tr>
+            <tr>
+              <th>1</th>
+              <th id="Plays1">Jogadas</th>
+              <th id="Time1">Tempo</th>
+              <th id="Quantidade1">Quantidade</th>
+              <th id="Modo1">Modo</th>
+            </tr>
+            <tr>
+              <th>2</th>
+              <th id="Plays2">Jogadas</th>
+              <th id="Time2">Tempo</th>
+              <th id="Quantidade2">Quantidade</th>
+              <th id="Modo2">Modo</th>
+            </tr>
+            <tr>
+              <th>3</th>
+              <th id="Plays3">Jogadas</th>
+              <th id="Time3">Tempo</th>
+              <th id="Quantidade3">Quantidade</th>
+              <th id="Modo3">Modo</th>
+            </tr>
+            <tr>
+              <th>4</th>
+              <th id="Plays4">Jogadas</th>
+              <th id="Time4">Tempo</th>
+              <th id="Quantidade4">Quantidade</th>
+              <th id="Modo4">Modo</th>
+            </tr>
+            <tr>
+              <th>5</th>
+              <th id="Plays5">Jogadas</th>
+              <th id="Time5">Tempo</th>
+              <th id="Quantidade5">Quantidade</th>
+              <th id="Modo5">Modo</th>
+            </tr>
+            <tr>
+              <th>6</th>
+              <th id="Plays6">Jogadas</th>
+              <th id="Time6">Tempo</th>
+              <th id="Quantidade6">Quantidade</th>
+              <th id="Modo6">Modo</th>
+            </tr>
+            <tr>
+              <th>7</th>
+              <th id="Plays7">Jogadas</th>
+              <th id="Time7">Tempo</th>
+              <th id="Quantidade7">Quantidade</th>
+              <th id="Modo7">Modo</th>
+            </tr>
+            <tr>
+              <th>8</th>
+              <th id="Plays8">Jogadas</th>
+              <th id="Time8">Tempo</th>
+              <th id="Quantidade8">Quantidade</th>
+              <th id="Modo8">Modo</th>
+            </tr>
+            <tr>
+              <th>9</th>
+              <th id="Plays9">Jogadas</th>
+              <th id="Time9">Tempo</th>
+              <th id="Quantidade9">Quantidade</th>
+              <th id="Modo9">Modo</th>
+            </tr>
+            <tr>
+              <th>10</th>
+              <th id="Plays10">Jogadas</th>
+              <th id="Time10">Tempo</th>
+              <th id="Quantidade10">Quantidade</th>
+              <th id="Modo10">Modo</th>
+            </tr>
+          </table>
+        </div>
+
+        <div class="Multi_endGame">
+          <div class="Multi_Result_Left">
+            <p id="MultiEnd_PlayerName">Nome Jogador</p>
+            <p id="MultiEnd_PlayerPairs">Pares: X</p>
+          </div>
+          <div class="Multi_Result_Right">
+            <p id="MultiEnd_GuestName">Oponente</p>
+            <p id="MultiEnd_GuestPairs">Pares: X</p>
+          </div>
+        </div>
+      </div>
     </div>
     <!-------->
     <script type="text/javascript" src="scripts/Languages.js"></script>
     <script>
-        changeLanguage("jogo")
-        sessionStorage.setItem("PAGE", "jogo")
-        
+      changeLanguage("jogo");
+      sessionStorage.setItem("PAGE", "jogo");
     </script>
-</body>
-
+  </body>
 </html>
