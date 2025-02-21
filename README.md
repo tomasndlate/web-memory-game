@@ -1,6 +1,6 @@
 <!-- PROJECT LOGO -->
 <div align="center">
-  <a href="#">
+  <a href="https://tomasndlate.github.io/web-memory-game/index.html">
     <img src="Imagens/BerrysFinais/Berry, The Bear Castanho.png" alt="Web Memory Game logo" width="80" height="80">
   </a>
 
@@ -10,7 +10,7 @@
      A front-end application to play a funny memory game
     <br />
     <br />
-    <a href="#"><strong>Explore Web Memory Game live »</strong></a>
+    <a href="https://tomasndlate.github.io/web-memory-game/index.html"><strong>Explore Web Memory Game live »</strong></a>
     <br />
   </p>
 </div>
